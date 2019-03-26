@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Pedidos</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content padding>
+  <ion-list lines="full">
+    <ion-item>
+      <ion-input required type="text" placeholder="Produto" [(ngModel)]="todo.task"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input required type="number" placeholder="Valor" [(ngModel)]="todo.preco"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input required type="number" placeholder="Codigo Cliente" [(ngModel)]="todo.priority"></ion-input>
+    </ion-item>
+
+  </ion-list>
+  <ion-button expand="full" (click)="saveTodo()">Salvar</ion-button>
+</ion-content>
