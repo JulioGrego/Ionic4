@@ -23,7 +23,7 @@
     <ion-item-sliding *ngFor="let item of todos">
       <ion-item lines="inset" button [routerLink]="['/details', item.id]">
         <ion-label>
-          {{ item.task }}
+        <!--  {{ item.task }}--> {{ item.nome }}
           <p>{{ item.createdAt | date:'short' }}</p>
         </ion-label>
         <ion-note slot="end" color="primary">{{ item.priority }}</ion-note>

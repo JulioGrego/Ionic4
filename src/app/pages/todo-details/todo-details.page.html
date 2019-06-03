@@ -9,6 +9,9 @@
  
 <ion-content padding>
   <ion-list lines="full">
+      <ion-item>
+          <ion-input required type="text" placeholder="Nome" [(ngModel)]="todo.nome"></ion-input>
+        </ion-item>
     <ion-item>
       <ion-input required type="text" placeholder="Produto" [(ngModel)]="todo.task"></ion-input>
     </ion-item>
